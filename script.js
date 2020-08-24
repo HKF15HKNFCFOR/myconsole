@@ -66,7 +66,7 @@ function hreff(src_main,texti,valtitl){
 				visio.push('<a href="'+String(elem)+'" target="_blank">'+String(elem)+'</a><br><br>')
 			}
 		}
-		document.getElementById('lin').innerHTML+=visio.join('')
+		document.getElementById('lin').innerHTML+=visio.join('<hr>')
 	}
 }
 function opend(val, sw=null){
