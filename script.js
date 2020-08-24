@@ -61,7 +61,7 @@ function hreff(src_main,texti,valtitl){
 				if(elem.match(/(http(s)?:)/g)==null){
 					elem='http://'+valtitl+elem
 				}
-				visio.push('<a href="'+String(elem)+'" target="_blank">'+String(elem)+'</a><br><br><br>')
+				visio.push('<a href="'+String(elem)+'" target="_blank">'+String(elem)+'</a><br><br>')
 			}
 		}
 		document.getElementById('lin').innerHTML+=visio.join('')
