@@ -40,11 +40,8 @@ img_src=doc.querySelectorAll('img')
 iframe_src=doc.querySelectorAll('iframe')
 
 hreff(a_src,'a',valtitl)
-document.getElementById('lin').innerHTML+='<hr>'
 hreff(video_src,'video',valtitl)
-document.getElementById('lin').innerHTML+='<hr>'
 hreff(img_src,'img',valtitl)
-document.getElementById('lin').innerHTML+='<hr>'
 hreff(iframe_src,'iframe',valtitl)
 
 }
