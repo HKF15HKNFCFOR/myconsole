@@ -32,3 +32,19 @@ width: 100%; /* Ширина слоя */
 padding: 10px;
 text-align: center;
 }
+#lin{
+background: #000082;
+color:#ffffff;
+margin-top:20px;
+height: 400px; 
+width: 100%;
+border: none;
+overflow-y: scroll;
+}
+a{
+	color:#ffffff;
+}
+h2{
+	color:#ffffff;
+	font-size:20px;
+}
