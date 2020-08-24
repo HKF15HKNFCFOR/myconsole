@@ -7,6 +7,7 @@ body {
 }
 input {
 font-size:20px;
+margin-top:15px;
 }
 p{
 color:#ffffff;
@@ -16,7 +17,7 @@ word-break: break-all;
 font-size:50px;
 }
 #outing{
-margin-top:30px;
+margin-top:20px;
 height: 300px; 
 border: none;
 overflow-y: scroll;
