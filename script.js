@@ -50,7 +50,9 @@ function hreff(src_main,texti,valtitl){
 	if (src_main==null){
 		alert('Нет ссылок: ',texti)
 	}else{
+		if(src_main.length>0){
 		visio.push('<h2>Ссылки тэга: '+texti+'</h2>')
+		}
 		for (let i=0; i<src_main.length; i++) {
 			let elem
 			if (texti == 'a'){
