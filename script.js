@@ -1,23 +1,23 @@
 let hyptext=[]
-let value=[]
+let gvalue=[]
 function sendok(id){
-  value[id]=document.getElementById('textbox'+id).value
-if(value[id] =='' || value[id]==' '){
+  gvalue[id]=document.getElementById('textbox'+id).value
+if(gvalue[id] =='' || gvalue[id]==' '){
 alert('Введите url')
 } else {
 document.getElementById('textout'+id).innerHTML="Статус: началась загрузка"
  
-  if (value[id].match(/(http(s)?:)/g)==null){
-  value[id]='http://'+value[id]
+  if (gvalue[id].match(/(http(s)?:)/g)==null){
+  gvalue[id]='http://'+gvalue[id]
   }
 let XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest; 
 let xhr = new XHR();
-xhr.open('GET', 'https://cors-anywhere.herokuapp.com/'+value[id], true); 
+xhr.open('GET', 'https://cors-anywhere.herokuapp.com/'+gvalue[id], true); 
 xhr.onprogress = function() { document.getElementById('textout'+id).innerHTML="Статус: загрузка..." }
 xhr.onload = function() {
 hyptext[id]=xhr.response
 document.getElementById('textout'+id).innerHTML="Статус: загружено!"
-document.getElementById('textout'+id).innerHTML+='<input type="button" value="Перейти!" onclick="opend(hyptext['+id+'])" /><input type="button" value="Код html" onclick="opend(hyptext['+id+'],\'yes\')" /><input type="button" value="Все ссылки" onclick="linkso(hyptext['+id+'],value['+id+'])" />'
+document.getElementById('textout'+id).innerHTML+='<input type="button" value="Перейти!" onclick="opend(hyptext['+id+'])" /><input type="button" value="Код html" onclick="opend(hyptext['+id+'],\'yes\')" /><input type="button" value="Все ссылки" onclick="linkso(hyptext['+id+'],gvalue['+id+'])" />'
 }
 xhr.onerror = function() { alert( `Ошибка ${xhr.status}: ${xhr.statusText}` ) } 
 xhr.send();
@@ -25,6 +25,7 @@ xhr.send();
 }
 let visio=[]
 function linkso(val,valtitl){
+	alert(valtitl)
 let a_src=[]
 let video_src=[]
 let img_src=[]
@@ -59,7 +60,7 @@ function hreff(src_main,texti,valtitl){
 			}
 			if (elem!=null){
 				if(elem.match(/(http(s)?:)/g)==null){
-					elem='http://'+valtitl+elem
+					elem=valtitl+'/'+elem
 				}
 				visio.push('<a href="'+String(elem)+'" target="_blank">'+String(elem)+'</a><br><br>')
 			}
