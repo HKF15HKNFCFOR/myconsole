@@ -25,7 +25,6 @@ xhr.send();
 }
 let visio=[]
 function linkso(val,valtitl){
-	alert(valtitl)
 let a_src=[]
 let video_src=[]
 let img_src=[]
