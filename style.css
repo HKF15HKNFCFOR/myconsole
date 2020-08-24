@@ -15,6 +15,7 @@ word-break: break-all;
 }
 .big{
 font-size:50px;
+margin-top:0;
 }
 #outing{
 margin-top:20px;
