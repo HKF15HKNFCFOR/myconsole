@@ -1,0 +1,32 @@
+body {
+	background: #000082;
+	padding: 10px;
+	color:#418200;
+	font-size:20px;
+	margin: 0;
+}
+input {
+font-size:20px;
+}
+p{
+color:#ffffff;
+word-break: break-all;
+}
+.big{
+font-size:50px;
+}
+#outing{
+margin-top:20px;
+height: 300px; 
+border: none;
+overflow-y: scroll;
+}
+#follow { 
+margin: 0px;
+z-index: 2; 
+position: fixed; 
+left: 0; top: 0; /* Левый нижний угол */
+width: 100%; /* Ширина слоя */
+padding: 10px;
+text-align: center;
+}

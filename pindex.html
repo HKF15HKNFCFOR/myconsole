@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<title>&copy; Console &copy;</title>
+  <link rel="stylesheet" href="st.css"/>
+</head>
+<body>
+  <textarea id="tx"></textarea>
+  <script>
+    let sw = localStorage.getItem('url_sw');
+let parameter = localStorage.getItem('url_str');
+    if (sw == 'yes') {
+     document.getElementById('tx').value=parameter
+    } else {
+    document.body.innerHTML=parameter
+    }
+ </script>
+</body>
+</html>
