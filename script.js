@@ -43,7 +43,7 @@ hreff(a_src,'a',valtitl)
 hreff(video_src,'video',valtitl)
 hreff(img_src,'img',valtitl)
 hreff(iframe_src,'iframe',valtitl)
-
+document.getElementById('lin').innerHTML=visio.join('')
 }
 function hreff(src_main,texti,valtitl){
 	if (src_main==null){
@@ -67,7 +67,6 @@ function hreff(src_main,texti,valtitl){
 				visio.push('<a href="'+String(elem)+'" target="_blank">'+String(elem)+'</a><br><br>')
 			}
 		}
-		document.getElementById('lin').innerHTML+=visio.join('')
 	}
 }
 function opend(val, sw=null){
