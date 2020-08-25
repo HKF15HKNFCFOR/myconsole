@@ -53,6 +53,7 @@ function hreff(src_main,texti,valtitl){
 		visio.push('<h2>Ссылки тэга: '+texti+'</h2>')
 		}
 		for (let i=0; i<src_main.length; i++) {
+			alert(src_main[i])
 			let elem
 			if (texti == 'a'){
 				elem=src_main[i].getAttribute('href')
