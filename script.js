@@ -46,7 +46,6 @@ hreff(iframe_src,'iframe',valtitl)
 document.getElementById('lin').innerHTML=visio.join('')
 }
 function hreff(src_main,texti,valtitl){
-	alert(texti)
 	if (src_main==null){
 		alert('Нет ссылок: ',texti)
 	}else{
